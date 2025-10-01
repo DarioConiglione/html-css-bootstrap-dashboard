@@ -55,55 +55,77 @@
     <main>
         <div class="container">
             <h2>Nuovo libro</h2>
-            <div class="row">                
-                <form class="row g-3">
-                    <div class="col-md-6">
-                        <label for="inputEmail4" class="form-label">Nome autore</label>
-                        <input type="text" class="form-control" id="inputEmail4" placeholder="Inserisci il nome dell'autore">
-                    </div>
-                    <div class="col-md-6">
-                        <label for="inputPassword4" class="form-label">Cognome autore</label>
-                        <input type="text" class="form-control" id="inputPassword4" placeholder="Inserisci il cognome dell'autore">
-                    </div>
-                    <div class="col-12">
-                        <label for="inputAddress" class="form-label">Titolo</label>
-                        <input type="text" class="form-control" id="inputAddress" placeholder="inserisci il titolo del libro">
-                    </div>
-                    
-                    <div class="col-4">
-                        <label for="inputAddress2" class="form-label">Genere</label>
-                        <input type="text" class="form-control" id="inputAddress2"
-                            placeholder="Apartment, studio, or floor">
-                    </div>
-                    <div class="col-4">
-                        <label for="inputCity" class="form-label">Anno di pubblicazione</label>
-                        <input type="text" class="form-control" id="inputCity">
-                    </div>
-                    <div class="col-4">
-                        <label for="inputState" class="form-label">ISBN#</label>
-                        <select id="inputState" class="form-select">
-                            <option selected>Choose...</option>
-                            <option>...</option>
-                        </select>
-                    </div>
-                    <div class="col-md-2">
-                        <label for="inputZip" class="form-label">Zip</label>
-                        <input type="text" class="form-control" id="inputZip">
-                    </div>
-                    <div class="col-12">
-                        <div class="form-check">
-                            <input class="form-check-input" type="checkbox" id="gridCheck">
-                            <label class="form-check-label" for="gridCheck">
-                                Check me out
-                            </label>
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <button type="submit" class="btn btn-primary">Sign in</button>
-                    </div>
-                </form>
 
-            </div>
+            <form class="row g-3">
+                <!-- NOME E COGNOME AUTORE-->
+                <div class="col-6">
+                    <label for="inputEmail4" class="form-label">Nome autore</label>
+                    <input type="text" class="form-control" id="inputEmail4"
+                        placeholder="Inserisci il nome dell'autore">
+                </div>
+                <div class="col-6">
+                    <label for="inputPassword4" class="form-label">Cognome autore</label>
+                    <input type="text" class="form-control" id="inputPassword4"
+                        placeholder="Inserisci il cognome dell'autore">
+                </div>
+
+                <!--TITOLO-->
+                <div class="col-12">
+                    <label for="inputAddress" class="form-label">Titolo</label>
+                    <input type="text" class="form-control" id="inputAddress"
+                        placeholder="inserisci il titolo del libro">
+                    <div id="passwordHelpBlock" class="form-text">
+                        Titolo versione italiana
+                    </div>
+                </div>
+
+                <!-- 3 COLONNE GENERE, ANNO, ISB-->
+
+                <div class="col-12 col-md-4">
+                    <label for="inputAddress2" class="form-label">Genere</label>
+                    <select class="form-select" id="validationCustom04" required>
+                        <option selected disabled value="">Scegli il genere</option>
+                        <option>Giallo</option>
+                        <option>Horror</option>
+                        <option>Thriller</option>
+                        <option>Fantasy</option>
+                        <option>Romanzo</option>
+                    </select>
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="inputCity" class="form-label">Anno di pubblicazione</label>
+                    <input type="text" class="form-control" id="inputCity" placeholder="Anno di pubblicazione">
+                </div>
+
+                <div class="col-12 col-md-4">
+                    <label for="inputState" class="form-label">ISBN#</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="inserisci ISBN">
+                </div>
+
+                <!--NOTE-->
+
+                <div class="col-12">
+                    <label for="exampleFormControlTextarea1" class="form-label">Note</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1"
+                        rows="3">Inserisci note sul libro </textarea>
+                </div>
+
+                <div class="col-12">
+                    <div class="form-check">
+                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                        <label class="form-check-label" for="gridCheck">
+                            Disponibile anche in digitale
+                        </label>
+                    </div>
+                </div>
+                <div class="col-12">
+                    <button type="submit" class="btn btn-primary">Aggiungi libro </button>
+                </div>
+            </form>
+
+
+
         </div>
     </main>
     <footer></footer>
